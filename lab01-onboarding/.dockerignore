@@ -1,0 +1,6 @@
+# Keep a student's local virtualenv and bytecode out of the build context:
+# COPY server/ ./ would otherwise drag a Windows .venv into a Linux image.
+**/.venv
+**/venv
+**/__pycache__
+**/*.py[cod]

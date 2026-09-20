@@ -1,0 +1,7 @@
+{
+  "github_handle": "jannovak99",
+  "http_code": 401,
+  "description": "Server rozumí požadavku, ale odmítá ho obsloužit, dokud se klient neprokáže — typicky chybí nebo je neplatná hlavička Authorization. Server zároveň v hlavičce WWW-Authenticate říká, jaký způsob ověření očekává.",
+  "preferred_language": "typescript",
+  "encrypted_alias": "PlF5aFC/e0foCsVxU/r+q1AzsYxB5960WXK0lSGFzBy2k+3TwTBWR4YB8ahqqCVp20qgy3TMMYm/CCRPlquenBDmZn4To9tgSCab3bwynRWfW5mgpTc8jndZIYSwbcnCcuhAS7YD9BnQfWo6L5jxQf0bWdBn08FMya3HHCKzWEGaSkJq6dFjG5q1+SCa+PKaSnPkN5IJgGH7RpD1Rm38KHJS7uM2phfqrdTl6st45YJtsOFe4np1uGnLS0zLnyzNIUin/mOYfSStzM9TQgYErxAa0VjF4i2vVeNGj0wLvFOEEK0l19n9a85BMUCuQ6yuBVXI25sxZmFfj1+Uj6rk/A=="
+}

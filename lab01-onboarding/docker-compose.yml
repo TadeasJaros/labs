@@ -1,0 +1,14 @@
+services:
+  onboarding:
+    build: .
+    container_name: wea-lab01
+    ports:
+      - "8000:8000"
+    volumes:
+      # so tools/encrypt_me.sh can reach the public key and write its output
+      - ./:/work:ro
+    healthcheck:
+      test: [ "CMD", "curl", "-fsS", "http://localhost:8000/healthz" ]
+      interval: 5s
+      timeout: 3s
+      retries: 10

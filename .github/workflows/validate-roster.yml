@@ -1,0 +1,36 @@
+name: validate-roster
+
+on:
+  # No paths filter on pull_request on purpose: a pull request that adds only a
+  # stray file (.venv, an editor file) must still get a check run - that is the
+  # case check_pr_scope() exists for, and a filtered-out workflow never runs it.
+  pull_request:
+  push:
+    branches: [main]
+    paths:
+      - 'lab01-onboarding/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate roster entries
+        working-directory: lab01-onboarding
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            git fetch --no-tags origin "${{ github.base_ref }}"
+            python3 tools/validate_roster.py --base "origin/${{ github.base_ref }}"
+          else
+            python3 tools/validate_roster.py
+          fi

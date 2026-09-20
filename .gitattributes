@@ -1,0 +1,4 @@
+# Shell scripts and everything else must stay LF - a CRLF encrypt_me.sh breaks in Git Bash and in the container.
+* text=auto eol=lf
+*.png binary
+*.jpg binary

@@ -216,3 +216,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# --- WEA course additions ---
+
+# Private keys are never committed. The course PUBLIC key is the one exception.
+*.pem
+!lab01-onboarding/server/public_key.pem
