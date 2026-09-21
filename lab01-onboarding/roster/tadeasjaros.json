@@ -1,0 +1,7 @@
+{
+  "github_handle": "tadeasjaros",
+  "http_code": 425,
+  "description": "Server tento kód posílá z bezpečnostních důvodů při rychlém navazování šifrovaného spojení. Pokud klient pošle data příliš brzy (před dokončením plného ověření spojení), server požadavek odmítne, aby zabránil potenciálnímu útoku (tzv. replay attack).",
+  "preferred_language": "python",
+  "encrypted_alias": "SJa+F4KekaVaScgB5bIZHox8MulUWDVzu5EQQMwxRzmlxSmw3tZOT94EuGo9ojp3ZxmOHj13pWpeqBahgU4EopJbJUOI872EdRWBQTASOEqTw7+SnynzRaG+5bJ2y2ExEmYG2EFtJP3SSQ9M19/9V0i73JLlmdXf7reJ/vekiA1E7DtYDQ64ea4rcjE09lRufIO9ljVCtN0/ohqHSnimGSSj9QSAhIIYIEonoNX6FKOiXJP911tD5XCX/2BsUJwqNydjNpWuYKFcPiqNbIiyDg4bxPlZm/fPsJPFoAjEns3CWSOKg3QXsBGt2lgcpHNp9FY3rMhZVm4+0qnycRidgg=="
+}
